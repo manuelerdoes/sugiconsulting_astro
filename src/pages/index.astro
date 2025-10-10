@@ -6,13 +6,13 @@ import Counter from '@components/Counter.astro'
 import ContentMedia from '@components/ContentMedia.astro'
 import FeaturedProjects from '@components/FeaturedProjects.astro'
 import FeaturedPosts from '@components/FeaturedPosts.astro'
-import { Accordion, AccordionItem, Avatar, AvatarGroup, Heading, Link } from 'accessible-astro-components'
+import { Accordion, AccordionItem, Avatar, AvatarGroup, Card, Heading, Link } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="my-64">
+  <!-- <section class="my-64">
     <div class="container">
       <Heading level="h2" class="mb-8">Features</Heading>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
@@ -47,49 +47,95 @@ import { Icon } from 'astro-icon/components'
         </Feature>
       </div>
     </div>
-  </section>
+  </section> -->
   <ContentMedia imgSrc="/accessible-components.webp">
-    <Heading level="h2">Accessible components</Heading>
+    <Heading level="h2">Kommunikation</Heading>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <Link
-        isExternal
-        href="https://github.com/incluud/accessible-astro-components">separate package</Link
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      Sugimoto Consulting berät und unterstützt Sie an der Schnittstelle Unternehmen, Politik und Gesellschaft. Es ist
+      unsere Leidenschaft, genau hinzusehen und komplexe Situationen zu analysieren, zu strukturieren und Ihre Botschaft
+      sicher ins Ziel zu führen.
     </p>
   </ContentMedia>
   <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <Heading level="h2">WCAG 2.2 AA compliant</Heading>
+    <Heading level="h2">Gemeinsam</Heading>
     <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
+      Wir entwickeln partizipativ ein Kommunikationskonzept mit Ihnen für Sie. Gemeinsam erarbeiten wir die Grundlagen,
+      definieren die notwendigen Instrumente und bestimmen die Inhalte. Je nach Ihrer spezifischen Situation und Ihren
+      individuellen Bedürfnissen gehören dazu:
     </p>
   </ContentMedia>
-  <FeaturedProjects />
-  <FeaturedPosts />
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <Heading level="h2">Publishing</Heading>
+    <p class="text-2xl">
+      Wir erzählen Ihre Geschichten. Egal ob im Print oder digital, wir finden den passenden Kanal und bereiten die
+      Inhalte zielgruppengerecht auf. Wir definieren die Ziele, formulieren Botschaften und erstellen Inhalt und Form.
+      Dazu arbeiten wir situationsabhängig mit den passenden Partnern zusammen. Unter Publishing verstehen wir
+      redaktionell geprägte, periodische Informationen. Wir bieten den vollständigen Service von der Konzeption bis zur
+      Publikation.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <Heading level="h2">Media Relations</Heading>
+    <p class="text-2xl">
+      Mit einer zielgerichteten und auf Ihr Unternehmen massgeschneiderte Medienarbeiten erarbeiten wir zusammen mit
+      Ihnen eine Medienstrategie, welche die Glaubwürdigkeit stärkt und proaktive Medienarbeit in sinnvollem Umfang
+      definiert.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <Heading level="h2">Change Communications</Heading>
+    <p class="text-2xl">
+      Sie befinden sich in einer Change Situation. Wir begleiten Sie. Der internen Kommunikation kommt in dieser
+      Situation eine zentrale Rolle zu. Aber auch die Loyalität Ihrer Kundinnen und Kunden halten Sie mit guter Change
+      Communication aufrecht und sichern sich die Akzeptanz bei Politik, Investoren und den Standortgemeinden.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <Heading level="h2">Community Relations</Heading>
+    <p class="text-2xl">
+      Community Relations: Egal wo Sie stehen oder wohin Sie gehen, Ihre Community will gepflegt sein. Wir verschaffen
+      Überblick durch das Erstellen von Stakeholder Karten und erarbeiten ganzheitliche Kommunikationskonzepte.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <Heading level="h2">Issues Managements</Heading>
+    <p class="text-2xl">
+      Für die Reputation Ihres Unternehmens oder Ihrer Organisation relevante Themen gilt es frühzeitig zu erkennen.
+      Dazu bedarf es einer systematischen Auseinandersetzung der verschiedenen Schnittstellen zur Gesellschaft und
+      Natur. Issues Management dient genau dieser Systematisierung sowie der optimalen Vorbereitung einer angemessenen
+      Reaktion in der Öffentlichkeit. Wir nehmen gerne mit Ihnen eine Situationsanalyse vor.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <Heading level="h2">Krisenkommunikation</Heading>
+    <p class="text-2xl">
+      Wir bereiten Sie und Ihr Unternehmen auch auf ungewollte Situationen vor. Strategische Krisenkommunikation ist
+      Teil eines effektiven Krisenkommunikationsmanagements. Mit einer sorgfältigen Vorbereitung in ruhigen Zeiten
+      sorgen Sie dafür, dass Sie auch in anspruchsvollen Zeiten die Kommunikationshohen behalten.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <Heading level="h2">Das Andere</Heading>
+    <p class="text-2xl">
+      Sie haben ein unkonventionelles Projekt, wir unterstützen Sie beim Finden von Ideen, beim Strukturieren der
+      Prozesse, beim Projektmanagement und bei der Umsetzung.
+    </p>
+  </ContentMedia>
+  <!-- <FeaturedProjects /> -->
+  <!-- <FeaturedPosts /> -->
   <section class="my-64">
     <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
       <div class="flex flex-col items-start gap-4">
-        <Heading level="h2">FAQ</Heading>
+        <Heading level="h2">Partnerinnen und Partner</Heading>
         <p class="text-2xl">
           This section demonstrates how to effectively use the Accordion component to organize and display frequently
           asked questions in an accessible and user-friendly way.
         </p>
-        <Link href="/faq" isButton type="primary" animateOnHover animationType="boop">
-          <Icon aria-hidden="true" name="lucide:headset" size=" 1.5rem" />
-          Contact support team
-        </Link>
       </div>
       <div class="space-content">
         <Accordion>
-          <AccordionItem name="exclusive" title="What is WCAG and why is it important?" open>
-            <p>
-              WCAG (Web Content Accessibility Guidelines) is a set of internationally recognized standards for web
-              accessibility. Following WCAG ensures your website is usable by people with various disabilities,
-              including visual, auditory, physical, and cognitive impairments. It's important not just for
-              accessibility, but also for legal compliance, SEO, and reaching a wider audience.
-            </p>
+          <AccordionItem name="exclusive" title="The Philantropist" open>
+            <p>Chefredaktion</p>
           </AccordionItem>
           <AccordionItem name="exclusive" title="What's the difference between ARIA labels and alt text?">
             <p>
@@ -130,26 +176,59 @@ import { Icon } from 'astro-icon/components'
     </div>
   </section>
   <section class="my-64">
-    <div class="space-content container">
-      <Heading level="h2">Our community</Heading>
+    <div class="space-content container" id="teamo">
+      <Heading level="h2">Team</Heading>
       <p class="text-2xl">
-        We're a community of developers who are passionate about making the web more accessible. We're always looking
-        for new ways to improve the accessibility of the web.
+        Eine partnerschaftliche und effiziente Zusammenarbeit liegt uns am Herzen. Bei sämtlichen Arbeiten stehen Mensch
+        und Gesellschaft im Fokus. Wir legen Wert auf eine gesamtheitliche Betrachtungs- und Herangehensweise, von der
+        gemeinsamen Erarbeitung des integrierten Kommunikationskonzeptes bis hin zur Umsetzung der Massnahmen.
       </p>
-      <AvatarGroup display="grid" gridItemsSize="300px" gridGap="2rem">
-        <Avatar initials="RJ" title="Robert Johnson" subtitle="Manager" />
-        <Avatar initials="MT" title="Maria Torres" subtitle="Developer" />
-        <Avatar initials="AK" title="Alex Kim" subtitle="Designer" />
-        <Avatar initials="SL" title="Sarah Lee" subtitle="Content Strategist" />
-        <Avatar initials="JP" title="James Peterson" subtitle="QA Engineer" />
-        <Avatar initials="LW" title="Lisa Wong" subtitle="Product Owner" />
-        <Avatar initials="DM" title="David Martinez" subtitle="UX Researcher" />
-        <Avatar initials="EB" title="Emma Brown" subtitle="Accessibility Specialist" />
-        <Avatar initials="TC" title="Thomas Chen" subtitle="Frontend Developer" />
-      </AvatarGroup>
+      <Card
+        img="public/Susanne_Sugimoto_Online.webp"
+        title="Susanne Sugimoto"
+        url=""
+
+      >
+        Susanne Sugimoto studierte an der Universität Zürich Geographie und Wirtschaftsinformatik und diplomierte 1995.
+        Zudem hält sie einen Master in Advanced Studies in Communication and Leadership der ZHAW. <br><br>
+        Sie war in verschiedenen Grossunternehmen (Coop, Holcim) in leitenden Funktionen in der Kommunikation tätig und ist Gründungsmitglied des Online-Magazins «Republik». 
+        Sie war während zwei Jahren die Geschäftsführerin und verantwortete den Aufbau der Geschäftsprozesse. <br><br>
+        Während gut 7 Jahren war sie beim KV Schweiz Zentralsekretärin Angestelltenpolitik/Gleichstellung/Jugend und Mitglied der Geschäftsleitung.
+      </Card>
+      <Card
+        img="public/TS_Online.webp"
+        title="Takashi Sugimoto"
+        url=""
+      >
+        Takashi Sugimoto war in verschiedenen Unternehmen in der Kommunikation tätig. 
+        Beim Schweizerischen Versicherungsverband SVV arbeitete er als Mediensprecher. 
+        Dieselbe Funktion hatte er bei der Suva und bei Coop. 
+        Bei der Detailhändlerin war er zudem als Redaktor und stellvertretender Produzent bei der Coopzeitung. 
+        Zudem arbeitete er als Controller/Layouter im Marketing. <br><br>
+        Takashi Sugimoto hat an der Universität Basel Philosophie studiert und mit dem Lizentiat abgeschlossen. 
+        An der Universität St. Gallen hat er das Intensivseminar für Kommunikation und Management absolviert.
+      </Card>
+      <!-- <AvatarGroup display="grid" gridItemsSize="300px" gridGap="2rem">
+        <Avatar
+          img="public/Susanne_Sugimoto_Online.webp"
+          initials="SS"
+          title="Susanne Sugimoto"
+          shape="square"
+          subtitle="Geschäftsführerin"
+          size="18rem"
+        />
+        <Avatar
+          img="public/TS_Online.webp"
+          initials="TS"
+          title="Takashi Sugimoto"
+          shape="square"
+          subtitle="Geschäftsführer"
+          size="18rem"
+        />
+      </AvatarGroup> -->
     </div>
   </section>
-  <section class="mt-64 mb-32">
+  <!-- <section class="mt-64 mb-32">
     <div class="container">
       <Heading level="h2" class="mb-16">Impact in numbers</Heading>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
@@ -159,7 +238,7 @@ import { Icon } from 'astro-icon/components'
         <Counter count="48+" title="Months" sub="Since launch" />
       </div>
     </div>
-  </section>
+  </section> -->
 </DefaultLayout>
 
 <style>
